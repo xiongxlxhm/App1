@@ -7,7 +7,34 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="42" />
+            <Setter Property="Foreground" Value="Yellow" />
+        </Style>
+    </Page.Resources>
+    <Grid Background="Red">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" >1</TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="1">2</TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="2">3</TextBlock>
+
+        <TextBlock Grid.Row="1" Grid.Column="0">4</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1">5</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2">6</TextBlock>
+
+        <TextBlock Grid.Row="2" Grid.Column="0">7</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1">8</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="2">9</TextBlock>
 
     </Grid>
 </Page>
